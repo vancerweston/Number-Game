@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Number Game</title>
+        <script type='text/javascript' src='game.js'></script>
+    </head>
+    <body>
+        <section id='header'>
+            <h1>Let's Play a Game!</h1>
+        </section>
+        <section id='input'>
+            <h3>I'm going to pick a random number between 1 and 100.</h3>
+            <h3>In the box below, enter your guess and click "Submit".</h3>
+            <h4>Good Luck!</h4>
+            <form name='myform'>
+                <input type='text' name='inputbox' value=''>
+                <input type='button' name='button' value='Submit' onClick='sendData(this.form)'>
+            </form>
+        </section>
+        <secton id='response'>
+
+        </secton>
+    </body>
+</html>
