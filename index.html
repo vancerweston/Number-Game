@@ -3,6 +3,7 @@
     <head>
         <title>My Number Game</title>
         <script type='text/javascript' src='game.js'></script>
+        <link rel='stylesheet' href='main.css'>
     </head>
     <body>
         <section id='header'>
@@ -10,15 +11,20 @@
         </section>
         <section id='input'>
             <h3>I'm going to pick a random number between 1 and 100.</h3>
+            <h3>The game is that you are going to guess that number.</h3>
             <h3>In the box below, enter your guess and click "Submit".</h3>
             <h4>Good Luck!</h4>
             <form name='myform'>
-                <input type='text' name='inputbox' value=''>
-                <input type='button' name='button' value='Submit' onClick='sendData(this.form)'>
+                <input id='inputbox' type='text' name='inputbox' value=''>
+                <input id='submit' type='button' name='button' value='Submit' onClick='sendData(this.form)'>
             </form>
         </section>
         <secton id='response'>
-
+            <p id='theiranswer'>You can do this!</p>
         </secton>
+        <section id='hidden'>
+            <h1 id='winnerh1'>You Won!!!</h1><br>
+            <p>Refresh the page to play again!</p>
+        </section>
     </body>
 </html>
