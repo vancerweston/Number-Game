@@ -19,7 +19,7 @@ body {
     border-top-right-radius: 25px;
     width: 500px;
     height: 175px;
-    margin: 0px auto 50px auto;
+    margin: -70px auto 70px auto;
     padding-bottom: 75px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.555);
 }
@@ -76,12 +76,12 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: goldenrod;
+    background-color: rgb(134, 168, 129);
     border-radius: 100px;
     box-shadow: 10px 10px 20px black;
     right: 0;
     left: 0;
-    top: 25px;
+    top: -15px;
     margin: 5% auto;
     width: 600px;
     height: 700px;

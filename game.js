@@ -11,7 +11,7 @@ function sendData(form) {
     let winner = document.getElementById('hidden');
 
     if (guessNum == myNum) {
-        win = 'It took you ' + count + ' attempt to get it right!';
+        win = 'It took you ' + count + ' attempt(s) to get it right!';
         background.style.backgroundColor = 'grey';
         winner.style.display = 'flex';
     } else if (guessNum > 100 || guessNum < 1 || isNaN(guessNum)) {
