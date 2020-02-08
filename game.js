@@ -5,12 +5,13 @@ let count = 0;
 function sendData(form) {
     let guessNum = document.forms['myform']['inputbox'].value;
     let text;
+    let win;
     count++;
     let background = document.body;
     let winner = document.getElementById('hidden');
 
     if (guessNum == myNum) {
-        text = 'You win! It took you ' + count + ' tries to get it right!';
+        win = 'It took you ' + count + ' attempt to get it right!';
         background.style.backgroundColor = 'grey';
         winner.style.display = 'flex';
     } else if (guessNum > 100 || guessNum < 1 || isNaN(guessNum)) {
@@ -22,7 +23,6 @@ function sendData(form) {
     } else {
         text = 'Something went wrong in the game. Please reload the page and play again.';
     }
+    document.getElementById('congrats').innerHTML = win;
     document.getElementById('theiranswer').innerHTML = text;
 }
-
-
